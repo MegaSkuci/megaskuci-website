@@ -1,0 +1,281 @@
+html {
+  /* Reset */
+  padding: 0;
+  margin: 0;
+
+  /* globalni nastaveni fontu */
+  font-family: "Proxima Light", sans-serif;
+  font-size: 18px;
+  color: #fff;
+
+  /* Vychozi barva pozadi  */
+  background-color: rgb(0, 0, 31);
+  /* Gradient top-down */
+  /* background: linear-gradient(rgb(0, 106, 118), rgb(197, 21, 174) 900px); */
+
+  background: linear-gradient(
+    to bottom right,
+    #fc2727 0%,
+    #fcf82c 25%,
+    #33fd33 50%,
+    #3783fe 75%,
+    #fd1861 100%
+  );
+
+  /* Kvuli gradientu je nutne nastavit minimalni vysku html */
+  min-height: 100%;
+}
+
+/* Reset */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Reset kvuli vlastnim fontum */
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 0;
+
+  color: #000;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+/*----------- HEADER -----------*/
+div.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80px;
+  padding: 0 50px;
+
+  background: rgba(255, 255, 255, 0.551);
+}
+
+div.links {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 5px;
+  line-height: 30px;
+  text-align: center;
+}
+
+div.links img {
+  height: 30px;
+  width: auto;
+}
+
+div.links.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+}
+
+div.links.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+}
+
+div.logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+}
+
+div.logo p {
+  z-index: 2;
+  font-size: 20px;
+  color: #000;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  margin-bottom: -20px;
+  padding: 0;
+}
+
+div.logo img {
+  z-index: 1;
+  position: absolute;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*----------- CONTENT -----------*/
+
+div.content {
+  background: #000;
+  margin: 5px;
+}
+
+div.art_placeholder {
+  height: 43vw;
+  overflow: hidden;
+}
+
+div.art_placeholder img {
+  display: block;
+  height: 50vw;
+  margin: -7vw auto;
+}
+
+/*----------- VIDEOS -----------*/
+
+div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  height: 20vw;
+  padding: 1.5vw 50px;
+  background: linear-gradient(rgb(255, 0, 0), rgb(114, 0, 0));
+}
+
+div.videos iframe {
+  width: 30vw;
+  height: 16vw;
+  padding: 5px;
+  background: linear-gradient(
+    to bottom right,
+    #fc2727 0%,
+    #fcf82c 25%,
+    #33fd33 50%,
+    #3783fe 75%,
+    #fd1861 100%
+  );
+}
+
+/*----------- TWITCH -----------*/
+
+div.twitch {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 21vw;
+  padding: 1.5vw 50px;
+
+  background: linear-gradient(rgb(174, 0, 255), rgb(74, 0, 134));
+}
+
+div.twitch iframe {
+  width: 30vw;
+  height: 16vw;
+  background: linear-gradient(
+    to bottom right,
+    #fc2727 0%,
+    #fcf82c 25%,
+    #33fd33 50%,
+    #3783fe 75%,
+    #fd1861 100%
+  );
+}
+
+/*----------- SMALLER DISPLAY -----------*/
+@media screen and (max-width: 1000px) {
+
+  div.art_placeholder {
+    height: 42vw;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  div.header {
+    height: 70px;
+    padding: 0 20px;
+  }
+
+  div.links {
+    font-size: 22px;
+  }
+  
+  div.links img {
+    height: 22px;
+  }
+  
+  div.links.left {
+    width: 150px;
+  }
+  
+  div.links.right {
+    width: 150px;
+  }
+  
+  div.logo img {
+    height: 45px;
+    width: 45px;
+  }
+  
+  div.logo p {
+    font-size: 16px;
+    align-self: center;
+  }
+
+  iframe.latestVideoEmbed.third,
+  iframe.latestVideoEmbed.second {
+    display: none;
+  }
+
+   div.videos {
+    padding-top: 20px;
+    align-items: center;
+    height: 38vw;
+  }
+
+  div.videos iframe {
+    width: 56vw;
+    height: 30vw;
+    padding: 5px;
+  }
+
+  div.twitch {
+    padding-top: 20px;
+    align-items: center;
+    height: 36vw;
+  } 
+  
+  div.twitch iframe {
+    width: 56vw;
+    height: 30vw;
+    padding: 5px;
+  }
+
+}
+
+/* TODO:  add Bahnschrift Font 
+          correct the scaling using vw and wh units          
+*/

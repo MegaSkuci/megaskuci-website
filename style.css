@@ -10,8 +10,6 @@ html {
 
   /* Vychozi barva pozadi  */
   background-color: rgb(0, 0, 31);
-  /* Gradient top-down */
-  /* background: linear-gradient(rgb(0, 106, 118), rgb(197, 21, 174) 900px); */
 
   background: linear-gradient(
     to bottom right,
@@ -276,6 +274,4 @@ div.twitch iframe {
 
 }
 
-/* TODO:  add Bahnschrift Font 
-          correct the scaling using vw and wh units          
-*/
+/* TODO:  add Bahnschrift Font */

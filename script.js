@@ -26,5 +26,3 @@ for (var i = 0, len = iframes.length; i < len; i++) {
   loadVideo(iframes[i]);
 }
 }
-
-

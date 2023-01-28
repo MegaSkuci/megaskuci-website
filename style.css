@@ -191,6 +191,7 @@ div.twitch {
 div.twitch iframe {
   width: 30vw;
   height: 16vw;
+  padding: 5px;
   background: linear-gradient(
     to bottom right,
     #fc2727 0%,

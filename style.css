@@ -86,7 +86,7 @@ div.links.left {
 div.links.right {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: space-between;
   width: 200px;
 }
 

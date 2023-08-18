@@ -148,7 +148,6 @@ div.aboutme {
   position: relative;
   background-image: url("./pictures/bg_side_wide.jpg");
   background-size: cover;
-  width: calc(100vw - 10px);
   height: 43vw;
   align-items: center;
   border-top: 3px solid black;

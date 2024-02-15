@@ -232,6 +232,40 @@ div.twitch iframe {
   );
 }
 
+/*----------- FOOTER -----------*/
+div.footer {
+  background-color: #000000c0;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+div.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+div.footer div.authors, div.contacts {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+div.footer div.licence {
+  text-align: center;
+}
+
+div.footer div.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+div.notice {
+  font-size: small;
+}
+
 /*----------- SMALLER DISPLAY -----------*/
 @media screen and (max-width: 1000px) {
 

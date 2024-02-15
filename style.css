@@ -1,10 +1,18 @@
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('./fonts/Bahnschrift-regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 html {
   /* Reset */
   padding: 0;
   margin: 0;
 
   /* globalni nastaveni fontu */
-  font-family: "Proxima Light", sans-serif;
+  font-family: "Bahnschrift";
   font-size: 18px;
   color: #fff;
 
@@ -155,11 +163,12 @@ div.aboutme {
 }
 
 div.aboutme p {
+  color: #000;
   width: 50%;
   margin-left: 8vw;
   letter-spacing: 2px;
   font-size: 1.5vw;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255), -1px 1px 1px rgb(255, 255, 255), 1px -1px 1px rgb(255, 255, 255), -1px -1px 1px rgb(255, 255, 255);
 }
 
 /*----------- VIDEOS -----------*/
@@ -186,7 +195,7 @@ div.videos iframe {
   height: 16vw;
   padding: 5px;
   background: linear-gradient(
-    to bottom right,
+    to top left,
     #fc2727 0%,
     #fcf82c 25%,
     #33fd33 50%,
@@ -214,7 +223,7 @@ div.twitch iframe {
   height: 16vw;
   padding: 5px;
   background: linear-gradient(
-    to bottom right,
+    to top left,
     #fc2727 0%,
     #fcf82c 25%,
     #33fd33 50%,
@@ -299,5 +308,3 @@ div.twitch iframe {
   }
 
 }
-
-/* TODO:  add Bahnschrift Font */

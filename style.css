@@ -29,7 +29,7 @@ html {
   );
 
   /* Kvuli gradientu je nutne nastavit minimalni vysku html */
-  min-height: 100vh;
+  min-height: fit-content;
 }
 
 /* Reset */
@@ -49,7 +49,7 @@ h4 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2vw;;
   text-align: center;
   padding: 0;
 
@@ -136,7 +136,6 @@ a {
 div.content {
   background: #000;
   margin: 5px;
-  min-height: 100vh;
 }
 
 div.art_placeholder {
@@ -234,6 +233,7 @@ div.twitch iframe {
 
 /*----------- FOOTER -----------*/
 div.footer {
+  position: sticky;
   background-color: #000000c0;
   display: grid;
   grid-template-columns: 33% 34% 33%;
@@ -287,7 +287,7 @@ div.notice {
   }
   
   div.links img {
-    height: 22px;
+    height: 20px;
   }
   
   div.links.left {
@@ -317,10 +317,14 @@ div.notice {
     display: none;
   }
 
-   div.videos {
-    padding-top: 20px;
+  div.videos h2, div.twitch h2 {
+    font-size: 4vh;
+  }
+
+  div.videos {
+    padding: 2vh 0 4vh 0;
     align-items: center;
-    height: 38vw;
+    height: max-content;
   }
 
   div.videos iframe {
@@ -330,15 +334,45 @@ div.notice {
   }
 
   div.twitch {
-    padding-top: 20px;
+    padding: 2vh 0 4vh 0;
     align-items: center;
-    height: 36vw;
+    height: max-content;
   } 
   
   div.twitch iframe {
     width: 56vw;
     height: 30vw;
     padding: 5px;
+  }
+
+  div.footer {
+    grid-template-rows: 60% auto;
+    grid-template-columns: 40% 20% 40%;
+  }
+
+  .footer .licence {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .footer .authors {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .footer .contacts {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  div.footer div.authors, div.contacts {
+    display: grid;
+    font-size: small;
+    font-weight: lighter;
+    align-items: center;
   }
 
 }

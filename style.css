@@ -36,6 +36,9 @@ html {
 body {
   padding: 0;
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Reset kvuli vlastnim fontum */
@@ -77,6 +80,8 @@ div.links {
   padding: 5px;
   line-height: 30px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 div.links img {
@@ -87,14 +92,16 @@ div.links img {
 div.links.left {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
+  gap: 40px;
   width: 200px;
 }
 
 div.links.right {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: right;
+  gap: 40px;
   width: 200px;
 }
 
@@ -108,7 +115,7 @@ div.logo {
   text-align: center;
 }
 
-div.logo h1 {
+div.logo p {
   z-index: 2;
   font-size: 20px;
   color: #000;
@@ -233,12 +240,13 @@ div.twitch iframe {
 
 /*----------- FOOTER -----------*/
 div.footer {
-  position: sticky;
   background-color: #000000c0;
   display: grid;
   grid-template-columns: 33% 34% 33%;
   padding: 10px;
   padding-bottom: 20px;
+  padding: 10px 40px;
+  margin-top: auto;
 }
 
 div.footer a {

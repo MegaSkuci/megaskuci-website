@@ -94,7 +94,7 @@ div.links.left {
   flex-direction: row;
   justify-content: left;
   gap: 40px;
-  width: 200px;
+  width: 30%;
 }
 
 div.links.right {
@@ -102,7 +102,7 @@ div.links.right {
   flex-direction: row;
   justify-content: right;
   gap: 40px;
-  width: 200px;
+  width: 30%;
 }
 
 div.logo {
@@ -143,6 +143,7 @@ a {
 div.content {
   background: #000;
   margin: 5px;
+  min-height: 100vh;
 }
 
 div.art_placeholder {
@@ -354,7 +355,7 @@ div.notice {
   }
 
   div.footer {
-    grid-template-rows: 60% auto;
+    grid-template-rows: auto auto;
     grid-template-columns: 40% 20% 40%;
   }
 

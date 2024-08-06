@@ -176,8 +176,6 @@ div.aboutme p {
   padding: 10px;
   letter-spacing: 2px;
   font-size: 1.5vw;
-  /*text-shadow: 1px 1px 1px rgb(255, 255, 255), -1px 1px 1px rgb(255, 255, 255), 1px -1px 1px rgb(255, 255, 255), -1px -1px 1px rgb(255, 255, 255);
-  */
   border-radius: 40px;
   background: #000000cc;
   box-shadow: #000000cc -40px 40px 40px;
@@ -265,7 +263,7 @@ div.footer div.contacts {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  text-align: left;
+  text-align: right;
 }
 
 div.notice {

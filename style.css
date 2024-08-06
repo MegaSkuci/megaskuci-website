@@ -71,7 +71,7 @@ div.header {
   height: 80px;
   padding: 0 50px;
 
-  background: rgba(255, 255, 255, 0.551);
+  background: rgba(255, 255, 255, 0.55);
 }
 
 div.links {
@@ -170,12 +170,17 @@ div.aboutme {
 }
 
 div.aboutme p {
-  color: #000;
+  color: #ffffff;
   width: 50%;
   margin-left: 8vw;
+  padding: 10px;
   letter-spacing: 2px;
   font-size: 1.5vw;
-  text-shadow: 1px 1px 1px rgb(255, 255, 255), -1px 1px 1px rgb(255, 255, 255), 1px -1px 1px rgb(255, 255, 255), -1px -1px 1px rgb(255, 255, 255);
+  /*text-shadow: 1px 1px 1px rgb(255, 255, 255), -1px 1px 1px rgb(255, 255, 255), 1px -1px 1px rgb(255, 255, 255), -1px -1px 1px rgb(255, 255, 255);
+  */
+  border-radius: 40px;
+  background: #000000cc;
+  box-shadow: #000000cc -40px 40px 40px;
 }
 
 /*----------- VIDEOS -----------*/

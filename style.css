@@ -299,14 +299,6 @@ div.notice {
     height: 20px;
   }
   
-  div.links.left {
-    width: 150px;
-  }
-  
-  div.links.right {
-    width: 150px;
-  }
-  
   div.logo img {
     height: 45px;
     width: 45px;
@@ -355,8 +347,8 @@ div.notice {
   }
 
   div.footer {
-    grid-template-rows: auto auto;
-    grid-template-columns: 40% 20% 40%;
+    grid-template: "a a"
+                   "b c";
   }
 
   .footer .licence {
@@ -378,7 +370,6 @@ div.notice {
   }
 
   div.footer div.authors, div.contacts {
-    display: grid;
     font-size: small;
     font-weight: lighter;
     align-items: center;

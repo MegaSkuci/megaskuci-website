@@ -93,7 +93,7 @@ div.links.left {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  gap: 40px;
+  gap: 10%;
   width: 30%;
 }
 
@@ -101,7 +101,7 @@ div.links.right {
   display: flex;
   flex-direction: row;
   justify-content: right;
-  gap: 40px;
+  gap: 10%;
   width: 30%;
 }
 
@@ -197,20 +197,6 @@ div.videos {
   background: linear-gradient(rgb(255, 0, 0), rgb(114, 0, 0));
 }
 
-div.videos iframe {
-  width: 30vw;
-  height: 16vw;
-  padding: 5px;
-  background: linear-gradient(
-    to top left,
-    #fc2727 0%,
-    #fcf82c 25%,
-    #33fd33 50%,
-    #3783fe 75%,
-    #fd1861 100%
-  );
-}
-
 /*----------- TWITCH -----------*/
 
 div.twitch {
@@ -225,9 +211,9 @@ div.twitch {
   background: linear-gradient(rgb(174, 0, 255), rgb(74, 0, 134));
 }
 
-div.twitch iframe {
+.video {
   width: 30vw;
-  height: 16vw;
+  height: 16vw; /* TODO: change width to percent */
   padding: 5px;
   background: linear-gradient(
     to top left,
@@ -237,6 +223,12 @@ div.twitch iframe {
     #3783fe 75%,
     #fd1861 100%
   );
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
 }
 
 /*----------- FOOTER -----------*/
@@ -309,12 +301,9 @@ div.notice {
     align-self: center;
   }
 
-  div.aboutme {
-    display: none;
-  }
-
-  iframe.latestVideoEmbed.third,
-  iframe.latestVideoEmbed.second {
+  div.aboutme,
+  .video.third,
+  .video.second {
     display: none;
   }
 
@@ -322,25 +311,14 @@ div.notice {
     font-size: 4vh;
   }
 
-  div.videos {
-    padding: 2vh 0 4vh 0;
-    align-items: center;
-    height: max-content;
-  }
-
-  div.videos iframe {
-    width: 56vw;
-    height: 30vw;
-    padding: 5px;
-  }
-
+  div.videos,
   div.twitch {
     padding: 2vh 0 4vh 0;
     align-items: center;
     height: max-content;
   } 
-  
-  div.twitch iframe {
+
+  div.twitch .video, div.videos .video {
     width: 56vw;
     height: 30vw;
     padding: 5px;

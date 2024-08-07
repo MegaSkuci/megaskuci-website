@@ -143,7 +143,7 @@ a {
 div.content {
   background: #000;
   margin: 5px;
-  min-height: 100vh;
+  flex-grow: 1;
 }
 
 div.art_placeholder {

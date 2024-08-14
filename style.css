@@ -181,6 +181,12 @@ div.aboutme p {
   box-shadow: #000000cc -40px 40px 40px;
 }
 
+
+div.aboutme a {
+  color: rgb(255, 255, 255);
+  text-decoration: 2px underline;
+}
+
 /*----------- VIDEOS -----------*/
 
 div.container {
@@ -238,9 +244,7 @@ iframe {
 div.footer {
   background-color: #000000c0;
   display: grid;
-  grid-template-columns: 33% 34% 33%;
-  padding: 10px;
-  padding-bottom: 20px;
+  grid-template-columns: auto auto auto;
   padding: 10px 40px;
   margin-top: auto;
 }
@@ -274,7 +278,7 @@ div.notice {
 @media screen and (max-width: 1000px) {
 
   div.art_placeholder {
-    height: 42vw;
+    height: 43vw;
   }
 
   h2 {
@@ -304,7 +308,21 @@ div.notice {
     align-self: center;
   }
 
-  div.aboutme,
+  div.aboutme {
+    background: none;
+    width: 100%;
+    height: max-content;
+    padding-bottom: 10px;
+    & p {
+      width: 80%;
+      padding: 0;
+      margin: auto;
+      font-size: 12px;
+      box-shadow: none;
+      text-align: justify;
+    }
+  }
+
   .video.third,
   .video.second {
     display: none;
@@ -321,7 +339,8 @@ div.notice {
     height: max-content;
   } 
 
-  div.twitch .video, div.videos .video {
+  div.twitch .video,
+  div.videos .video {
     width: 56vw;
     height: 30vw;
     padding: 5px;

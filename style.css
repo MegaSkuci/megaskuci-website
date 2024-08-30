@@ -62,7 +62,7 @@ h2 {
 }
 
 /*----------- HEADER -----------*/
-div.header {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -241,7 +241,7 @@ iframe {
 }
 
 /*----------- FOOTER -----------*/
-div.footer {
+footer {
   background-color: #000000c0;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -249,21 +249,21 @@ div.footer {
   margin-top: auto;
 }
 
-div.footer a {
+footer a {
   color: #fff;
   text-decoration: underline;
 }
 
-div.footer div.authors, div.contacts {
+footer div.authors, div.contacts {
   font-size: medium;
   font-weight: lighter;
 }
 
-div.footer div.licence {
+footer div.licence {
   text-align: center;
 }
 
-div.footer div.contacts {
+footer div.contacts {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -285,7 +285,7 @@ div.notice {
     font-size: 30px;
   }
 
-  div.header {
+header {
     height: 70px;
     padding: 0 20px;
   }
@@ -346,30 +346,30 @@ div.notice {
     padding: 5px;
   }
 
-  div.footer {
+footer {
     grid-template: "a a"
                    "b c";
   }
 
-  .footer .licence {
+  footer .licence {
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 4;
   }
 
-  .footer .authors {
+  footer .authors {
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-  .footer .contacts {
+  footer .contacts {
     grid-row-start: 2;
     grid-column-start: 3;
     grid-column-end: 4;
   }
 
-  div.footer div.authors, div.contacts {
+  footer div.authors, div.contacts {
     font-size: small;
     font-weight: lighter;
     align-items: center;

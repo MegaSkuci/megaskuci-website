@@ -151,7 +151,7 @@ div.art_placeholder {
   overflow: hidden;
 }
 
-div.art_placeholder img {
+div.art_placeholder img, div.art_placeholder video {
   display: block;
   height: 50vw;
   margin: -7vw auto;
